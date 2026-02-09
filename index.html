@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USJ クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ログイン画面 -->
+  <div id="login-screen" class="screen">
+    <div class="login-container">
+      <img src="images/header.png" alt="USJ クイズ" class="header-image">
+      <div class="login-box">
+        <img src="images/character.png" alt="たまご" class="character-image">
+        <p class="login-message">パスワードを入力してください</p>
+        <input type="password" id="password-input" placeholder="パスワード" autocomplete="off">
+        <button id="login-btn" class="btn btn-primary">ログイン</button>
+        <p id="login-error" class="error-message hidden">パスワードが違います</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- トップ画面 -->
+  <div id="top-screen" class="screen hidden">
+    <div class="container">
+      <img src="images/header.png" alt="USJ クイズ" class="header-image">
+      <div class="top-content">
+        <img src="images/character.png" alt="たまご" class="character-image-small">
+        <p class="top-description">USJの豆知識やトリビアに挑戦！<br>あなたはどれだけUSJに詳しい？</p>
+        <div class="question-count-select">
+          <p class="select-label">出題数を選んでね</p>
+          <div class="count-buttons">
+            <button class="btn btn-count" data-count="10">10問</button>
+            <button class="btn btn-count" data-count="20">20問</button>
+            <button class="btn btn-count" data-count="0">全問チャレンジ</button>
+          </div>
+        </div>
+      </div>
+      <img src="images/footer.png" alt="たまご" class="footer-image">
+    </div>
+  </div>
+
+  <!-- クイズ画面 -->
+  <div id="quiz-screen" class="screen hidden">
+    <div class="container">
+      <div class="quiz-header">
+        <div class="progress-info">
+          <span id="question-number">1</span> / <span id="total-questions">10</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="quiz-body" class="quiz-body">
+        <div class="question-badge" id="question-badge">4択</div>
+        <p id="question-text" class="question-text"></p>
+        <div id="choices-container" class="choices-container"></div>
+      </div>
+
+      <!-- フィードバック -->
+      <div id="feedback" class="feedback hidden">
+        <div id="feedback-result" class="feedback-result"></div>
+        <img id="feedback-image" src="" alt="" class="feedback-image">
+        <p id="feedback-explanation" class="feedback-explanation"></p>
+        <a id="feedback-reel" class="reel-link hidden" href="" target="_blank" rel="noopener">
+          関連リール動画を見る
+        </a>
+        <button id="next-btn" class="btn btn-primary">次の問題へ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="result-screen" class="screen hidden">
+    <div class="container">
+      <img src="images/header.png" alt="USJ クイズ" class="header-image">
+      <div class="result-content">
+        <h2 class="result-title">結果発表</h2>
+        <div id="result-chart" class="result-chart">
+          <div class="chart-inner">
+            <span id="result-percent" class="result-percent">0%</span>
+            <span id="result-score" class="result-score">0/10</span>
+          </div>
+        </div>
+        <p id="result-message" class="result-message"></p>
+        <img id="result-image" src="" alt="" class="result-character">
+
+        <div id="review-section" class="review-section"></div>
+
+        <div class="result-actions">
+          <button id="retry-btn" class="btn btn-primary">もう一度チャレンジ</button>
+          <button id="back-top-btn" class="btn btn-secondary">トップに戻る</button>
+        </div>
+      </div>
+      <img src="images/footer.png" alt="たまご" class="footer-image">
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
