@@ -3,7 +3,7 @@
 
   // パスワードハッシュ（SHA-256）
   // デフォルト: "tamago"
-  const PASSWORD_HASH = "b26b0847e70e5486b3fa25f8e56a0a504fe2e84f1a83b16fd96910f45e569e09";
+  const PASSWORD_HASH = "fd8cc3555bd177051ab89736e5f92adc79326c404556f85e924b2c9ffe3db0e5";
 
   // 状態管理
   let currentQuestions = [];
