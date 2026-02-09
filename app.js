@@ -28,19 +28,34 @@
 
   // === SHA-256ハッシュ ===
   async function sha256(message) {
-    const msgBuffer = new TextEncoder().encode(message);
-    const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    try {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    } catch (e) {
+      // crypto.subtle未対応の場合はプレーンテキスト比較にフォールバック
+      return message;
+    }
   }
+
+  // プレーンテキストパスワード（crypto.subtle未対応時のフォールバック）
+  const PASSWORD_PLAIN = "tamago";
 
   // === ログイン処理 ===
   async function handleLogin() {
-    const input = document.getElementById("password-input");
-    const error = document.getElementById("login-error");
-    const hash = await sha256(input.value);
+    var input = document.getElementById("password-input");
+    var error = document.getElementById("login-error");
+    var inputValue = input.value;
 
-    if (hash === PASSWORD_HASH) {
+    try {
+      var hash = await sha256(inputValue);
+      var isValid = (hash === PASSWORD_HASH) || (inputValue === PASSWORD_PLAIN);
+    } catch (e) {
+      var isValid = (inputValue === PASSWORD_PLAIN);
+    }
+
+    if (isValid) {
       sessionStorage.setItem("usj_quiz_auth", "1");
       error.classList.add("hidden");
       showScreen("top");
