@@ -455,12 +455,25 @@ body {
   text-align: center;
 }
 
+.review-title-correct {
+  color: #27AE60;
+  margin-top: 20px;
+}
+
 .review-item {
-  background: #FEF9F9;
-  border: 1px solid #F5D5D5;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 12px;
+}
+
+.review-wrong {
+  background: #FEF9F9;
+  border: 1px solid #F5D5D5;
+}
+
+.review-correct {
+  background: #F0FAF4;
+  border: 1px solid #C8E6D5;
 }
 
 .review-question {

@@ -228,26 +228,43 @@
     const resultImg = document.getElementById("result-image");
     resultImg.src = percent >= 60 ? "images/correct.png" : "images/wrong.png";
 
-    // 復習セクション
+    // 復習セクション（間違えた問題 → 正解した問題の順で全問表示）
     const reviewSection = document.getElementById("review-section");
     const wrongAnswers = userAnswers.filter(a => !a.isCorrect);
+    const correctAnswers = userAnswers.filter(a => a.isCorrect);
+    let html = "";
+    let qNum = 1;
 
     if (wrongAnswers.length > 0) {
-      let html = '<h3 class="review-title">間違えた問題</h3>';
-      wrongAnswers.forEach((a, i) => {
+      html += '<h3 class="review-title">間違えた問題</h3>';
+      wrongAnswers.forEach(a => {
         html += `
-          <div class="review-item">
-            <p class="review-question">Q${i + 1}. ${a.question}</p>
+          <div class="review-item review-wrong">
+            <p class="review-question">Q${qNum}. ${a.question}</p>
             <p class="review-answer user">あなたの回答: ${a.userAnswer}</p>
             <p class="review-answer correct">正解: ${a.correctAnswer}</p>
             <p class="review-explanation">${a.explanation}</p>
           </div>
         `;
+        qNum++;
       });
-      reviewSection.innerHTML = html;
-    } else {
-      reviewSection.innerHTML = '<p style="text-align:center;color:#27AE60;font-weight:700;">全問正解! お見事!</p>';
     }
+
+    if (correctAnswers.length > 0) {
+      html += '<h3 class="review-title review-title-correct">正解した問題</h3>';
+      correctAnswers.forEach(a => {
+        html += `
+          <div class="review-item review-correct">
+            <p class="review-question">Q${qNum}. ${a.question}</p>
+            <p class="review-answer correct">正解: ${a.correctAnswer}</p>
+            <p class="review-explanation">${a.explanation}</p>
+          </div>
+        `;
+        qNum++;
+      });
+    }
+
+    reviewSection.innerHTML = html;
 
     // データ送信（GAS Web App）
     sendAnswerData();
