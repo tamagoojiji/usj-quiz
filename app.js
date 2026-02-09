@@ -307,14 +307,11 @@
       }
     });
 
-    // 出題数選択
-    document.querySelectorAll(".btn-count").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var count = parseInt(this.dataset.count);
-        prepareQuestions(count);
-        showScreen("quiz");
-        renderQuiz();
-      });
+    // クイズスタート（5問固定）
+    document.getElementById("start-btn").addEventListener("click", function () {
+      prepareQuestions(5);
+      showScreen("quiz");
+      renderQuiz();
     });
 
     // 次の問題
