@@ -291,6 +291,22 @@
       if (e.key === "Enter") handleLogin();
     });
 
+    // パスワード表示切替
+    document.getElementById("toggle-password").addEventListener("click", function () {
+      var input = document.getElementById("password-input");
+      var eyeIcon = document.getElementById("eye-icon");
+      var eyeOffIcon = document.getElementById("eye-off-icon");
+      if (input.type === "password") {
+        input.type = "text";
+        eyeIcon.classList.add("hidden");
+        eyeOffIcon.classList.remove("hidden");
+      } else {
+        input.type = "password";
+        eyeIcon.classList.remove("hidden");
+        eyeOffIcon.classList.add("hidden");
+      }
+    });
+
     // 出題数選択
     document.querySelectorAll(".btn-count").forEach(function (btn) {
       btn.addEventListener("click", function () {
