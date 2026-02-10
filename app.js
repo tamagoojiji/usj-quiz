@@ -10,10 +10,12 @@
   let currentIndex = 0;
   let userAnswers = [];
   let questionCount = 10;
+  let selectedCategory = "all";
 
   // DOM要素
   const screens = {
     login: document.getElementById("login-screen"),
+    register: document.getElementById("register-screen"),
     top: document.getElementById("top-screen"),
     quiz: document.getElementById("quiz-screen"),
     result: document.getElementById("result-screen")
@@ -34,7 +36,6 @@
       const hashArray = Array.from(new Uint8Array(hashBuffer));
       return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
     } catch (e) {
-      // crypto.subtle未対応の場合はプレーンテキスト比較にフォールバック
       return message;
     }
   }
@@ -58,7 +59,12 @@
     if (isValid) {
       sessionStorage.setItem("usj_quiz_auth", "1");
       error.classList.add("hidden");
-      showScreen("top");
+      // 登録済みならトップへ、未登録なら登録画面へ
+      if (localStorage.getItem("usj_quiz_user")) {
+        showScreen("top");
+      } else {
+        showScreen("register");
+      }
     } else {
       error.classList.remove("hidden");
       input.value = "";
@@ -76,10 +82,17 @@
     return a;
   }
 
+  // === カテゴリでフィルタリング ===
+  function getFilteredQuestions() {
+    if (selectedCategory === "all") return QUIZ_DATA;
+    return QUIZ_DATA.filter(function (q) { return q.category === selectedCategory; });
+  }
+
   // === 問題を準備 ===
   function prepareQuestions(count) {
-    const shuffled = shuffle(QUIZ_DATA);
-    const total = count === 0 ? shuffled.length : Math.min(count, shuffled.length);
+    var pool = getFilteredQuestions();
+    var shuffled = shuffle(pool);
+    var total = count === 0 ? shuffled.length : Math.min(count, shuffled.length);
     currentQuestions = shuffled.slice(0, total);
     currentIndex = 0;
     userAnswers = [];
@@ -150,6 +163,7 @@
     userAnswers.push({
       question: question.question,
       type: question.type,
+      category: question.category,
       userAnswer: displayChoices[selectedIndex],
       correctAnswer: question.choices[question.answer],
       isCorrect: isCorrect,
@@ -281,6 +295,7 @@
       var payload = {
         sessionId: sessionId,
         timestamp: new Date().toISOString(),
+        category: selectedCategory,
         answers: userAnswers
       };
 
@@ -299,13 +314,29 @@
   function init() {
     // セッション確認
     if (sessionStorage.getItem("usj_quiz_auth") === "1") {
-      showScreen("top");
+      if (localStorage.getItem("usj_quiz_user")) {
+        showScreen("top");
+      } else {
+        showScreen("register");
+      }
     }
 
     // ログイン
     document.getElementById("login-btn").addEventListener("click", handleLogin);
     document.getElementById("password-input").addEventListener("keydown", function (e) {
       if (e.key === "Enter") handleLogin();
+    });
+
+    // プライバシーポリシー モーダル
+    document.getElementById("privacy-link").addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("privacy-modal").classList.remove("hidden");
+    });
+    document.getElementById("modal-close").addEventListener("click", function () {
+      document.getElementById("privacy-modal").classList.add("hidden");
+    });
+    document.getElementById("privacy-modal").addEventListener("click", function (e) {
+      if (e.target === this) this.classList.add("hidden");
     });
 
     // パスワード表示切替
@@ -324,9 +355,100 @@
       }
     });
 
-    // クイズスタート（5問固定）
+    // === 登録画面 ===
+    var selectedGender = "";
+    var regYear = document.getElementById("reg-year");
+    var regMonth = document.getElementById("reg-month");
+    var regDay = document.getElementById("reg-day");
+    var privacyCheckbox = document.getElementById("privacy-checkbox");
+    var registerBtn = document.getElementById("register-btn");
+
+    // 年プルダウン生成（35歳の1991年を初期スクロール位置付近に）
+    (function () {
+      var currentYear = new Date().getFullYear();
+      for (var y = currentYear; y >= 1940; y--) {
+        var opt = document.createElement("option");
+        opt.value = y;
+        opt.textContent = y + "年";
+        if (y === currentYear - 35) opt.selected = true;
+        regYear.appendChild(opt);
+      }
+      // 月プルダウン（1月〜12月）
+      for (var m = 1; m <= 12; m++) {
+        var opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m + "月";
+        regMonth.appendChild(opt);
+      }
+      // 日プルダウン（1日〜31日）
+      for (var d = 1; d <= 31; d++) {
+        var opt = document.createElement("option");
+        opt.value = d;
+        opt.textContent = d + "日";
+        regDay.appendChild(opt);
+      }
+    })();
+
+    // 性別ボタン
+    document.querySelectorAll(".gender-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".gender-btn").forEach(function (b) {
+          b.classList.remove("selected");
+        });
+        btn.classList.add("selected");
+        selectedGender = btn.getAttribute("data-gender");
+        checkRegisterForm();
+      });
+    });
+
+    // フォームの入力状態を監視
+    function checkRegisterForm() {
+      var isReady = regYear.value && regMonth.value && regDay.value && selectedGender && privacyCheckbox.checked;
+      registerBtn.disabled = !isReady;
+    }
+
+    regYear.addEventListener("change", checkRegisterForm);
+    regMonth.addEventListener("change", checkRegisterForm);
+    regDay.addEventListener("change", checkRegisterForm);
+    privacyCheckbox.addEventListener("change", checkRegisterForm);
+
+    // 登録ボタン
+    registerBtn.addEventListener("click", function () {
+      if (registerBtn.disabled) return;
+
+      var m = String(regMonth.value).padStart(2, "0");
+      var d = String(regDay.value).padStart(2, "0");
+      var userData = {
+        birthday: regYear.value + "-" + m + "-" + d,
+        gender: selectedGender,
+        registeredAt: new Date().toISOString()
+      };
+      localStorage.setItem("usj_quiz_user", JSON.stringify(userData));
+      showScreen("top");
+    });
+
+    // 登録画面のプライバシーポリシーリンク
+    document.getElementById("privacy-link-reg").addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("privacy-modal").classList.remove("hidden");
+    });
+
+    // カテゴリ選択
+    document.querySelectorAll(".category-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".category-btn").forEach(function (b) {
+          b.classList.remove("selected");
+        });
+        btn.classList.add("selected");
+        selectedCategory = btn.getAttribute("data-category");
+      });
+    });
+
+    // クイズスタート（5問固定、カテゴリの問題数が5未満の場合はその数）
     document.getElementById("start-btn").addEventListener("click", function () {
-      prepareQuestions(5);
+      var pool = getFilteredQuestions();
+      var count = Math.min(5, pool.length);
+      prepareQuestions(count);
       showScreen("quiz");
       renderQuiz();
     });
@@ -334,9 +456,11 @@
     // 次の問題
     document.getElementById("next-btn").addEventListener("click", nextQuestion);
 
-    // リトライ
+    // リトライ（同じカテゴリで再挑戦）
     document.getElementById("retry-btn").addEventListener("click", function () {
-      prepareQuestions(questionCount);
+      var pool = getFilteredQuestions();
+      var count = Math.min(5, pool.length);
+      prepareQuestions(count);
       showScreen("quiz");
       renderQuiz();
     });

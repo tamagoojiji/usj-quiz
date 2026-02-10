@@ -11,7 +11,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "映画『SING』のキャラクターが登場する約20分のミュージカル・シアター・ショーです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -22,7 +23,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "冷たいバタービールと温かいホットバタービールがあり、それぞれ通常カップ、マグカップ付き、プレミアムマグカップ付きの3種類から選べます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -35,7 +37,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "実際にサンフランシスコには世界的に有名で歴史のある中華街が存在しており、エリアの世界観を忠実に再現した設定です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -48,7 +51,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "フライングダイナソーの入り口の看板の上にいるプテラノドンは、向かって右側を向いています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -61,7 +65,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ニューヨーク・エリアではベビーカーのタイヤが取れたり折れたりする事例が報告されているため、特に注意が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -74,7 +79,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "9時になると、パークサイド・グリルの当日予約用QRコードがレストランの店頭（ゲート前）に掲出されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -87,7 +93,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ステージ18は元MBSスタジオで、現在はクールジャパンの名探偵コナンイベントやハロウィンイベントなどの会場として利用されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -98,7 +105,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ホテルバナナのドア中央にはチャイムがあり、押してみると何か発見があるかもしれません。夜にはネオンサインも点灯します。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -111,7 +119,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ハリドリの身長制限は132cm以上。浮遊感、急上昇、急降下、急停止、旋回が特徴のジェットコースターです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -124,7 +133,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ARゴーグルを装着し、ハンドルを握ってクッパ軍団とのレースを体験するライドアトラクションです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -137,7 +147,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジョーズに登場するホホジロザメの体長は9.75m、重さはなんと2.7tという巨大なサイズで設定されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -150,7 +161,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "足元に荷物を置きますが、左右の横揺れが激しいため、小さい荷物は足で挟むなどして飛んでいかないように注意が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -163,7 +175,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ドンキーコングのアトラクション待ち列に隠れピクミンがいます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -176,7 +189,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "身長107cm以上から体験可能。107cm以上122cm未満の場合は付き添い者が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -187,7 +201,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハリウッド通りにあるマリオ・カフェ＆ストアは、スーパー・ニンテンドー・ワールドのオープンよりも先に開業しました。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -200,7 +215,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "かつてE.T.アドベンチャーというアトラクションがあり、その名残として床にE.T.のモニュメントと20周年記念の刻印が残されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -213,7 +229,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "夏に開催されるウォーターパレードの際に、使用した水をスムーズに排水できるように設計されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -226,7 +243,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "足跡をたどった先には、檻に捕らえられたラプトルの等身大フィギュアが隠されており、時々動く仕掛けになっています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -239,7 +257,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシックパークエリアのスプラッシュダウンスナックなどで販売されているターキーレッグは1,400円です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -252,7 +271,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ショップの天井にある壮大なシャンデリアには、トリケラトプスやヴェロキラプトルなど様々な恐竜のシルエットが精巧にデザインされています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -265,7 +285,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "特定の場所の左側に立つと、ドンキーコングの撮影ができます。料金は2200円です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -276,7 +297,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "映画の看板では女性の顔に落書きがされていますが、USJの看板では落書きがありません。落書き版はアミティ・ランディング・レストランのメニューケースで確認できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -289,7 +311,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "外（エリアの通り）から見えるのはロブスターと人魚の風見鶏。残りの5つはジョーズに乗ると見ることができます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -302,7 +325,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "パークサイド・グリル向かいの壁にあるショーケースの中に、ドナルドダックが描かれた緑色の缶（ミニチュア）が隠されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -315,7 +339,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ミニオン・クッキーサンドは「バナナアイス&フルーツ」と「ストロベリーベアチーズ」の2種類があります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -328,7 +353,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハリウッド・ドリーム・ザ・ライドのシングルライダーは前向き座席に案内されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -341,7 +367,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ジュラシックパークエリアの床のひび割れは、恐竜が歩いたことでできたという設定です。古代の遺跡の跡も残されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -352,7 +379,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "右側のドアには、ミニオン用の小さな扉と、グルーが入るための大きな扉が設けられています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -365,7 +393,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "12個の目覚まし時計の中から、光っている青色のボタンを押してアラームを停止させるゲームです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -378,7 +407,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "USJの入り口にある屋根は「キャノピー」と呼ばれています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "entrance"
   },
   {
     "type": "choice",
@@ -391,7 +421,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "プレミアムマグカップ付きは5,400円。高価ですが、記念品として持ち帰ることができます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -404,7 +435,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ミニオンパーク中央の噴水周辺やトイレへ向かう通路の柵は、全てバナナの形をしています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -417,7 +449,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ミニオンパーク入って左側にあるガチャガチャ「ポップアイ」は1回700円。ミニオンのコインケースやキーホルダー（全6種）が手に入ります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -428,7 +461,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "パワーアップバンドチャレンジは、1回クリアすると次回からハードモードになり難しくなります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -441,7 +475,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "大人（12歳以上）は7,000円、子ども（4〜11歳）は2,600円です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -454,7 +489,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "エリア内には7種類の風見鶏があり、一番有名なのは人魚の風見鶏。外から見えるのはロブスターと人魚で、残り5つはジョーズに乗ると見えます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -467,7 +503,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "真夜中の墓場でモンスターたちがロックンロール・ライブを繰り広げる約30分のシアター・ショーです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -480,7 +517,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ジープ車内には国際遺伝子技術（InGen）のロゴが入ったケースがあり、その中に恐竜の卵が5個隠されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -493,7 +531,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "スマホの充電切れなどの際に利用できる待ち時間表示モニターが、パーク内に2箇所設置されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -506,7 +545,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ハピネスカフェの前身レストランでは、カレーに隠し味としてコーラが使われていました。現在もハピネスカフェはコカ・コーラがスポンサーを務めています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -519,7 +559,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "シャークスナックスの名物「サメの餌」は1,000円。温かいスープやドリンクも一緒に楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -532,7 +573,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "基本的には前の方がおすすめです。お子さんがいる場合は、前の席に座らせてあげるとより楽しめます。(個人差あり)",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -543,7 +585,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "バタービールはノンアルコールドリンクです。冷たいものと温かいホットバタービールがあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -554,7 +597,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "よやくのりは、ユニバーサル・ワンダーランドで利用できる無料の予約システムです。指定時間に優先乗車できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -565,7 +609,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "昼間は明るい状態で撮影できますが、夜になるとライトアップされ、幻想的で綺麗な写真を撮ることができます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -578,7 +623,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "スモークチキンは人気で昼間は行列ができやすいですが、朝方や夕方は比較的空いています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -591,7 +637,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "自販機の右側の岩壁にはコカ・コーラを飲む恐竜の骨格が彫られており、隣のコーラ瓶型の穴から顔を出して写真も撮れます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -602,7 +649,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "よやくのりは無料で利用できる予約システムです。ワンダーランド内の対象アトラクションの予約時間を指定して、待ち時間を短縮できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -615,7 +663,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "フライング・スヌーピーは、よやくのりの対象アトラクションではありません。エルモのバブル・バブル、エルモのゴーゴー・スケートボード、モッピーのバルーン・トリップは対象です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -626,7 +675,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "エルモのリトル・ドライブは、よやくのりの対象アトラクションです。未就学児のみが乗車できるアトラクションですが、予約システムを利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -639,7 +689,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "よやくのりは、同時に1個のアトラクションしか予約できません。予約した時間が終わってから、次の予約が可能になります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -650,7 +701,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ビッグバードのビッグトップ・サーカスは、よやくのりの対象アトラクションです。ワンダーランド内の人気アトラクションの一つです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -663,7 +715,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "よやくのりは、パークに入園後すぐに予約が可能です。人気の時間帯は早めに埋まるため、入園したらすぐに予約することをおすすめします。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -674,7 +727,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "セサミのビッグ・ドライブは、よやくのりの対象アトラクションです。現在は運休中ですが、稼働時には予約システムを利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -687,7 +741,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "よやくのりの対象は6つです。エルモのバブル・バブル、エルモのゴーゴー・スケートボード、モッピーのバルーン・トリップ、ビッグバードのビッグトップ・サーカス、エルモのリトル・ドライブ、セサミのビッグ・ドライブです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -700,7 +755,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "バックドロップの身長制限は132cm以上です。付き添い者がいても、この制限は変わりません。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -713,7 +769,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシック・パーク・ザ・ライドは、付き添い者同伴の場合107cm以上から乗車できます。一人で乗る場合は122cm以上が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -724,7 +781,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "スペース・ファンタジー・ザ・ライドは、付き添い者同伴の場合102cm以上から乗車可能です。一人で乗る場合は122cm以上が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -737,7 +795,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ミニオン・ハチャメチャ・ライドは、一人で乗る場合122cm以上、付き添い者同伴の場合102cm以上から乗車できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -750,7 +809,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ザ・フライング・ダイナソーの身長制限は132cm以上で、付き添い者がいても制限は変わりません。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -761,7 +821,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ジョーズには身長制限がありません。小さなお子様でも、付き添い者と一緒に乗船できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -774,7 +835,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ドンキーコングのクレイジー・トロッコは、付き添い者同伴の場合107cm以上から乗車できます。一人で乗る場合は122cm以上が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -787,7 +849,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ミニオン・ハチャメチャ・アイスは、付き添い者同伴の場合92cm以上から乗車できます。一人で乗る場合は122cm以上が必要です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -798,7 +861,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "フォービドゥン・ジャーニーの身長制限は122cm以上です。付き添い者がいても、この制限は変わりません。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -811,7 +875,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "エルモのバブル・バブルは、付き添い者同伴の場合92cm以上から乗車できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -824,7 +889,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "ドンキーコングのクレイジー・トロッコは、チャイルドスイッチの対象外です。他の3つのアトラクションは利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "trueFalse",
@@ -835,7 +901,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "スペース・ファンタジー・ザ・ライドは、チャイルドスイッチの対象アトラクションです。小さなお子様連れの家族におすすめのサービスです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -848,7 +915,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ミニオン・ハチャメチャ・ライドは、シングルライダーの対象外です。他の3つのアトラクションでは利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "trueFalse",
@@ -859,7 +927,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハリウッド・ドリーム・ザ・ライドは、チャイルドスイッチとシングルライダーの両方が利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -872,7 +941,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "チャイルドスイッチは、身長制限などで乗れない子供と一緒に大人が待機し、交代でアトラクションを楽しめるサービスです。2回並ぶ必要がありません。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "trueFalse",
@@ -883,7 +953,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ザ・フライング・ダイナソーは、シングルライダーの対象アトラクションです。一人で訪れた際や、待ち時間を短縮したい時に便利です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -896,7 +967,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "シングルライダーは、グループで乗ることができません。一人ずつ空席に案内されるため、一緒に乗りたい場合は通常の列に並ぶ必要があります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "trueFalse",
@@ -907,7 +979,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ジュラシック・パーク・ザ・ライドは、チャイルドスイッチとシングルライダーの両方が利用できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "navigation"
   },
   {
     "type": "choice",
@@ -920,7 +993,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "エルモのリトル・ドライブは、未就学児のみが乗車できるアトラクションです。小さなお子様専用の車の運転体験ができます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -931,7 +1005,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハローキティのカップケーキ・ドリームは、一人で座れれば乗車できます。明確な身長制限はありませんが、安全に座れることが条件です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -944,7 +1019,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "クッキーモンスター・スライドには身長制限がありません。小さなお子様でも楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -955,7 +1031,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "アビーのマジカル・パーティには身長制限がありません。ワンダーランド内で小さなお子様でも楽しめるアトラクションです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -966,7 +1043,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "フライング・スヌーピーは、付き添い者同伴の場合92cm以上から乗車可能です。ワンダーランド内の人気アトラクションです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -979,7 +1057,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "かぼちゃジュースの正式名称は「パンプキン・ジュース」です。映画「ハリー・ポッター」シリーズに登場する飲み物を再現しています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -990,7 +1069,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハリー・ポッターエリア内には、マジカル・ワンドを使って魔法が使える場所が複数あります。杖を振ると、様々な魔法の効果を体験できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -1003,7 +1083,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "グルーの家の前には、巨大なロケットのオブジェがあります。映画「怪盗グルーの月泥棒」に登場するロケットを再現しています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -1014,7 +1095,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ジュラシック・パーク・エリア内では、様々な場所で恐竜の鳴き声が聞こえます。臨場感あふれる演出の一つです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "choice",
@@ -1027,7 +1109,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "スーパー・ニンテンドー・ワールドの入口には、巨大な緑の土管があります。マリオシリーズでお馴染みのワープ土管を再現しています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -1038,7 +1121,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ウォーターワールドは屋外ショーですが、雨の日でも開催されることがあります。ただし、天候や安全上の理由で中止になる場合もあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -1049,7 +1133,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ユニバーサル・ワンダーランドには、エルモのイマジネーション・プレイランドやスヌーピー・スタジオなど、屋内プレイランドがあります。雨の日でも楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -1062,7 +1147,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシック・パーク・ザ・ライドの最後の落下は、約25.9メートルです。USJのウォーター系ライドで最大級の落下を体験できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -1075,7 +1161,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "アミティ・ビレッジは、映画「ジョーズ」の舞台となった漁村をモデルにしています。エリア内には映画の世界観が再現されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "secret"
   },
   {
     "type": "trueFalse",
@@ -1086,7 +1173,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "スーパー・ニンテンドー・ワールド内には、キノピオカフェがあります。マリオの世界観をテーマにした料理が楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1099,7 +1187,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ホグワーツ特急のフォトスポットは、映画と同じ「9と3/4番線」ホームです。原作に忠実な演出が施されています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -1112,7 +1201,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ザ・フライング・ダイナソーは、フライング型（うつ伏せ）のコースターです。まるでプテラノドンに掴まれて飛んでいるような体験ができます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "trueFalse",
@@ -1123,7 +1213,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "スペース・ファンタジー・ザ・ライドは、屋内コースターです。宇宙空間をテーマにした演出が楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -1136,7 +1227,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "ミニオン・ハチャメチャ・ミッションは、単独利用の場合122cm以上が必要です。ただし身長制限以下でも付き添い者同伴で乗車できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -1149,7 +1241,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "身長制限132cm以上のアトラクションは3つです。ハリウッド・ドリーム・ザ・ライド、バックドロップ、ザ・フライング・ダイナソーです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -1162,7 +1255,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "クッパJr. ファイナルバトルには身長制限がありません。小さなお子様でも楽しめるアトラクションです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "trueFalse",
@@ -1173,7 +1267,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ミニオン・パークには、ミニオンと写真が撮れるグリーティングスポットがあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "attraction"
   },
   {
     "type": "choice",
@@ -1186,7 +1281,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "バートとアーニーのワンダー・ザ・シーには身長制限がありません。小さなお子様でも楽しめるアトラクションです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "kids"
   },
   {
     "type": "choice",
@@ -1199,7 +1295,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "メルズ・ドライブインのトリプルチーズバーガーセットは2,100円です。フライドポテトとソフトドリンク(R)付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1212,7 +1309,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ザ・ドラゴンズ・パール・コンボは1,800円です。チャーハンまたはジャージャー麺に、麻婆豆腐、唐揚げ、スープがセットになっています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1225,7 +1323,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "パークサイド・グリルのプレミアムコースは6,000円です。鯛のグリルやサーモンなど、本格的なコース料理を楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1236,7 +1335,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "キノピオ・カフェはスーパー・ニンテンドー・ワールド内にあるクイックサービスレストランです。マリオの世界観を楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1249,7 +1349,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "三本の箒は、ウィザーディング・ワールド・オブ・ハリー・ポッターエリアにあるレストランです。バタービールやシェパーズパイなどが人気です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1262,7 +1363,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "パークサイド・グリルはフルサービスレストランです。USJで数少ない本格レストランで、コース料理も楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1273,7 +1375,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "メルズ・ドライブインは、ハリウッドエリアにあるクイックサービスレストランです。1950年代のアメリカンダイナーをテーマにしています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1286,7 +1389,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "ミニオンのデイブ・ポップコーンバケツは3,200円です。ミニオンパークの人気スナックです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1299,7 +1403,8 @@ const QUIZ_DATA = [
     ],
     "answer": 3,
     "explanation": "ボブのワッフルチキンプレートは2,600円です。ライス、コーンチャウダー、カップサラダ、ソフトドリンク(L)付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1310,7 +1415,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ロストワールド・レストランは、ジュラシックパークエリアにあるクイックサービスレストランです。プレート系の料理が楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1323,7 +1429,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "SAIDOはフルサービスの和食レストランです。USJでは珍しい本格的な和食を楽しめます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1336,7 +1443,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "デイブのキーマカレープレートは2,200円です。ライス、カップサラダ、ソフトドリンク(L)付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1347,7 +1455,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "アミティ・ランディング・レストランは、サンド系のメニューが中心のクイックサービスレストランです。アミティエリアにあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1360,7 +1469,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ルイズ N.Y.ピザパーラーは、ピザを提供するクイックサービスレストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1373,7 +1483,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "スヌーピーバックロットカフェは、パスタ系のメニューが中心のクイックサービスレストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1386,7 +1497,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "クラシックバーガーセットは1,800円です。フライドポテトとソフトドリンク付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1399,7 +1511,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "スチュアートのベーコンチーズ・バーガープレートは2,400円です。フライドポテト&トルティーヤ、カップサラダ、ソフトドリンク付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1410,7 +1523,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ヨッシー・スナック・アイランドは、スーパー・ニンテンドー・ワールド内にある食べ歩きフードのお店です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1423,7 +1537,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "USJのフルサービスレストランは3つです。パークサイド・グリル、SAIDO、ロンバーズ・ランディングです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1434,7 +1549,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ビバリーヒルズ・ブランジェリーは、サンド系とデザート系のメニューが楽しめるクイックサービスレストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1447,7 +1563,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "名探偵コナン・ミステリー・レストランは、2026年1月30日から5月31日まで開催されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1460,7 +1577,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシック・ワールド・ジャーニーは、2026年3月4日から8月31日まで開催されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1473,7 +1591,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "25周年イベント「Discover U!!!」は、2026年3月4日から2027年3月30日まで約1年間開催されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1486,7 +1605,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "呪術廻戦×ストーリー・ライド ～呪霊列車～は、2026年1月30日から8月18日まで開催されます。第1弾と第2弾に分かれています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1499,7 +1619,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "CLUB ZEDD REMIXは、2026年1月30日から8月17日まで開催されます。世界的DJ「Zedd」がオール監修した音楽体験です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1510,7 +1631,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ミニオン・ヴィランコン・グリーティングは、2025年7月11日から2026年3月1日まで開催されます。悪党コスプレのミニオンに会えるイベントです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1523,7 +1645,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "名探偵コナン・クイズラリー × LINEは、2026年1月30日から6月30日まで開催されます。毎月新しいクイズと壁紙が登場します。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1536,7 +1659,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "『ウィキッド 永遠の約束』セレブレーションは、2026年2月20日から12月27日まで開催されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1549,7 +1673,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "モンスターハンターワイルズ ～モリバーの宴～は、2025年11月19日から2026年5月17日まで開催されます。期間限定レストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1562,7 +1687,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "NO LIMIT! パレード ～Discover U!!! バージョン～は、2026年3月4日から2027年1月11日まで開催されます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1573,7 +1699,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ジュラシック・ワールド・ベイビー・ディノ・アドベンチャーは無料で参加できます。赤ちゃん恐竜とふれ合えるグリーティングイベントです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1586,7 +1713,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "東野圭吾原作『マスカレード』シリーズ「狙われた仮面舞踏会」は8,600円（税込）〜です。ショーとビュッフェで約130分の体験です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1597,7 +1725,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ジュラシック・ワールド・ミッション・ウォークは無料で参加できます。ミッション専用冊子（無料）を受け取って体験開始です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1610,7 +1739,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ギャビーの「ニャンタスティック！」グリーティングは、2026年2月27日から4月5日までの期間限定です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1623,7 +1753,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ユニバーサル・カーズ・アンド・スターズ・コレクションは、2026年3月4日から2027年3月30日まで。映画に登場した名車に出会えます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1634,7 +1765,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ユニ春（ユニバル）2026は学生応援キャンペーンです。学生だけが特別プライスで購入できるパスや、豪華アーティスト出演のライブなどがあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1647,7 +1779,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "NO LIMIT! パレード特別鑑賞エリア入場券は2,100円（税込）です。ウッディー＆ウィニーと一緒にはしゃげる特別エリアです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1660,7 +1793,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシック・ワールド・ラプター・アラートは、2026年3月4日から8月31日まで開催されます。脱走したラプトルに襲われるスリル体験です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1671,7 +1805,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "呪術廻戦×ストーリー・ライド ～呪霊列車～は、ハリウッド・ドリーム・ザ・ライド（TRACK4）にて体験できます。バックドロップでは体験できません。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1684,7 +1819,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジュラシック・ワールド・ディノ・エンカウンターは、2026年3月4日から8月31日まで開催されます。超大型草食恐竜と間近でふれ合えます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1697,7 +1833,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "25周年イベントのテーマは「Discover U!!!」で、「知らないジブンが騒ぎ出す」がキャッチコピーです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "trueFalse",
@@ -1708,7 +1845,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "ハピネス・カフェでは、プレート系、ハンバーガー、デザート系のメニューが楽しめるクイックサービスレストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1721,7 +1859,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ルイズ N.Y.ピザパーラーのペパロニのピッツァセットは1,750円です。フライドポテトとソフトドリンク(R)付きです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1732,7 +1871,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "イーブル・イーツは、ミニオンパークにあるデザート系・食べ歩きフードのクイックサービスレストランです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1745,7 +1885,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "ジャングル・ビート・シェイクは、デザート系のフードカートです。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1758,7 +1899,8 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "パークサイド・グリルなどで提供されるザ・プレミアム・モルツ（生ビール）は850円です。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "trueFalse",
@@ -1769,7 +1911,8 @@ const QUIZ_DATA = [
     ],
     "answer": 0,
     "explanation": "マリオ・カフェ＆ストアでは、デザート系と食べ歩きフードが楽しめるクイックサービスのお店です。ハリウッド通りにあります。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "food"
   },
   {
     "type": "choice",
@@ -1782,7 +1925,8 @@ const QUIZ_DATA = [
     ],
     "answer": 2,
     "explanation": "モンスターハンターワイルズ ～モリバーの宴～は期間限定レストランです。焚き火料理やアイコニックなメニューで、モンハンの世界を体感できます。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   },
   {
     "type": "choice",
@@ -1795,6 +1939,7 @@ const QUIZ_DATA = [
     ],
     "answer": 1,
     "explanation": "ユニ春！ライブ 2026は、2026年1月31日から2月15日まで開催されます。チケット代金には1デイ・スタジオ・パスが含まれています。",
-    "reelUrl": null
+    "reelUrl": null,
+    "category": "event"
   }
 ];
